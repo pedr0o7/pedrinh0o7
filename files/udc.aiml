@@ -2,6 +2,31 @@
 <aiml>
   <category>
     <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    <template>
+    Ola, em que posso ser util:
+    <br></br>
+    
+    <button>
+    <text>Marcação de consulta</text>
+    <url>https://marcacaoconsulta.hapvida.com.br</url><!--link para o local da marcação de consulta-->
+    </button>
+    
+    <button>
+    <text>verificação de horario</text>
+    <url>https://share.linx.com.br/pages/viewpage.action?pageId=18564913</url><!--link para ver seu agendamento-->
+    </button>
+    
+    <button>
+    <text>Resultado</text>
+    <url>https://laboratorioexame.com.br/resultados-de-exames</url><!--link para ver resulatados-->
+    </button>
+    
+    </template>
+    
   </category>
+
+
+  
+  
+  
 </aiml>
