@@ -37,13 +37,35 @@
 </category>
 
 <category>
+    <pattern>8:00 a 12:00</pattern>
+    <template>
+        insira seu nome e seu cpf:
+    </template>
+</category>
+
+
+<category>
+    <pattern>14:00 a 18:00</pattern>
+    <template>
+        insira seu nome e seu cpf:
+    </template>
+</category>
+
+<category>
     <pattern>Marcação de consulta</pattern>
-    <template>opa isso ai
+    <template>Por favor informe um horsrio depreferencia:
+    <button type="button" onclick="8:00 a 12:00()">8:00 a 12:00</button>
+    <button type="button" onclick="14:00 a 18:00()">14:00 a 18:00</button>
+
+    
+    caso queira retornar aperte no botão abaixo.
     <button>
         <text>Retornar</text>
         <postback>oi</postback>
     </button></template>
 </category>
+  
+  
   
   <category>
       <pattern>verificação de horario</pattern>
@@ -55,6 +77,8 @@
       </template>
   </category>
   
+  
+  
   <category>
       <pattern>Resultado</pattern>
       <template>seu resultado e:
@@ -64,6 +88,7 @@
     </button>
       </template>
   </category>
+  
   
   <category>
     <pattern>*</pattern>
