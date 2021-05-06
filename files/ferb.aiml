@@ -22,7 +22,7 @@
     <pattern>oi</pattern>
     <template>
         Ola eu sou o Ferb o seu chatbot amigão
-    <image>https://lh3.googleusercontent.com/proxy/6wpSj0liWLzjuB_6DFpQmEt7fG9-Dsd-oDcysKp0V8aJKB3j1q_fWhDE9DvZQYLn6l20VL_75Q2G7WjM3M-8APZvPVVYCZs4tgIQwqplqbShivNrUv7mwPGqxEXarV4o02gGD0dVV0idgzghoDjtdBzPqk3dN_LMFvLMPszwKvZHpY2g5uRFk7BiMkAj1v197EKuC2OgulPraysv-li2NkNkEZthR2llnJkGJW9H1Tg12Ofyonqb</image>
+    <image>https://fisiocarepet.com.br/wp-content/uploads/2020/12/dicas-cachorros-ferias.png</image>
     
     Em que posso ser util?
     <br></br>
@@ -94,7 +94,7 @@
     <pattern>*</pattern>
     <template>
     Ola eu sou o Ferb o seu chatbot amigão
-    <image>https://lh3.googleusercontent.com/proxy/6wpSj0liWLzjuB_6DFpQmEt7fG9-Dsd-oDcysKp0V8aJKB3j1q_fWhDE9DvZQYLn6l20VL_75Q2G7WjM3M-8APZvPVVYCZs4tgIQwqplqbShivNrUv7mwPGqxEXarV4o02gGD0dVV0idgzghoDjtdBzPqk3dN_LMFvLMPszwKvZHpY2g5uRFk7BiMkAj1v197EKuC2OgulPraysv-li2NkNkEZthR2llnJkGJW9H1Tg12Ofyonqb</image>
+    <image>https://fisiocarepet.com.br/wp-content/uploads/2020/12/dicas-cachorros-ferias.png</image>
     <button>
         <text>Prosseguir</text>
         <postback>ferb</postback>
