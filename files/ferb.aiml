@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-    
   <category>
     <pattern>ferb</pattern>
     <template>
@@ -16,13 +15,14 @@
     </template>
     
   </category>
+  
 
 
 <category>
     <pattern>oi</pattern>
     <template>
-        Ola eu sou o Ferb o seu chatbot amigão
-    <image>https://fisiocarepet.com.br/wp-content/uploads/2020/12/dicas-cachorros-ferias.png</image>
+        Ola eu sou o Ferb.
+    <image>https://static.wixstatic.com/media/a05660_c43b130da7fb4e2bafd4d18122843b13~mv2.png/v1/fill/w_455,h_303,al_c,q_85,usm_0.66_1.00_0.01/Logo%20Ferb.png</image>
     
     Em que posso ser util?
     <br></br>
@@ -32,70 +32,194 @@
     
     <button type="button" onclick="Resultado()">Resultado</button>
     
+    <button type="button" onclick="Atendimento()">Atendimento</button>
+    
     </template>
     
 </category>
 
-<category>
-    <pattern>8:00 a 12:00</pattern>
-    <template>
-        insira seu nome e seu cpf:
-    </template>
-</category>
-
 
 <category>
-    <pattern>14:00 a 18:00</pattern>
-    <template>
-        insira seu nome e seu cpf:
-    </template>
+    <pattern>Atendimento</pattern>
+    <template>Por favor entre em contato atravez desse numero caso necessário:<br></br>
+                61999922159
+              <button>
+        <text>Retornar ao menu inicial</text>
+        <postback>oi</postback>
+    </button>            
+    
+    </template>#Botão de acesso ditreto
 </category>
+
 
 <category>
     <pattern>Marcação de consulta</pattern>
-    <template>Por favor informe um horario de preferencia:
+    <template>Por favor informe uma especialidade de preferencia:
     
-    <button type="button" onclick="8:00 a 12:00()">8:00 a 12:00</button>
-    <button type="button" onclick="14:00 a 18:00()">14:00 a 18:00</button>
-
-    
+    <button type="button" onclick="Cardiologista()">Cardiologista</button>
+    <button type="button" onclick="Otorrinolaringologista()">Otorrinolaringologista</button>
+    <br></br>
     caso queira retornar aperte no botão abaixo.
     <button>
-        <text>Retornar</text>
+        <text>Retornar ao menu inicial</text>
+        <postback>oi</postback>
+    </button></template>
+</category>
+
+
+
+<category>
+    <pattern>Cardiologista</pattern>
+    <template>Por favor informe um horario de preferencia para o nosso Cardiologista:
+    
+    <button type="button" onclick="De 8 as 12()">De 8 as 12</button>
+    <button type="button" onclick="Das 14 as 18()">Das 14 as 18</button>
+  <br></br>
+    caso queira retornar aperte no botão abaixo.
+    <button>
+        <text>Retornar ao menu inicial</text>
         <postback>oi</postback>
     </button></template>
 </category>
   
   
+<category>
+    <pattern>Otorrinolaringologista</pattern>
+    <template>Por favor informe um horario de preferencia para o nosso Otorrinolaringologista:
+    
+    <button type="button" onclick="De 7 as 11()">De 7 as 11</button>
+    <button type="button" onclick="Das 13 as 17()">Das 13 as 17</button>
+  <br></br>
+    caso queira retornar aperte no botão abaixo.
+    <button>
+        <text>Retornar ao menu inicial</text>
+        <postback>oi</postback>
+    </button></template>
+</category>  
+
+<category>
+    <pattern>De 8 as 12</pattern>
+
+    <xsl:variable name="CPF" select="01452295131"> </xsl:variable>
+    <template>Digite seu CPF por gentileza.
+        <button>
+        <text>Retornar ao menu inicial</text>
+        <postback>oi</postback>
+    </button>
+    </template>
+</category>
+<category>
+    <pattern>Das 14 as 18</pattern>
+    <xsl:variable name="CPF" select="07680195161"> </xsl:variable>
+    <template>Digite seu CPF por gentileza.
+        <button>
+        <text>Retornar ao menu inicial</text>
+        <postback>oi</postback>
+    </button>
+    </template>
+</category>  
+  
+<category>
+    <pattern>De 7 as 11</pattern>
+
+    <xsl:variable name="CPF" select="06925152167"> </xsl:variable>
+    <template>Digite seu CPF por gentileza.
+        <button>
+        <text>Retornar ao menu inicial</text>
+        <postback>oi</postback>
+    </button>
+    </template>
+</category>
+<category>
+    <pattern>Das 13 as 17</pattern>
+    <xsl:variable name="CPF" select="05148589159"> </xsl:variable>
+    <template>Digite seu CPF por gentileza.
+        <button>
+        <text>Retornar ao menu inicial</text>
+        <postback>oi</postback>
+    </button>
+    </template>
+</category>    
+
+<category>
+    <pattern>05148589159</pattern>
+
+    <template>Seu Horario entre 13:00 e 17:00. Foi confiramdo com o nosso Otorrinolaringologista. Lembre-se Ordem de chegada
+        <button>
+        <text>Retornar ao menu inicial</text>
+        <postback>oi</postback>
+    </button>
+    </template>
+</category>   
+  
+<category>
+    <pattern>06925152167</pattern>
+
+    <template>Seu Horario entre 7:00 e 11:00. Foi confiramdo com o nosso Otorrinolaringologista. Lembre-se Ordem de chegada
+        <button>
+        <text>Retornar ao menu inicial</text>
+        <postback>oi</postback>
+    </button>
+    </template>
+</category>  
+
+<category>
+    <pattern>01452295131</pattern>
+
+    <template>Seu Horario entre 8:00 e 12:00. Foi confiramdo com o nosso Cardiologista. Lembre-se Ordem de chegada
+        <button>
+        <text>Retornar ao menu inicial</text>
+        <postback>oi</postback>
+    </button>
+    </template>
+</category> 
+
+<category>
+    <pattern>07680195161</pattern>
+
+    <template>Seu Horario entre 14:00 e 18:00. Foi confiramdo com o nosso Cardiologista. Lembre-se Ordem de chegada
+        <button>
+        <text>Retornar ao menu inicial</text>
+        <postback>oi</postback>
+    </button>
+    </template>
+</category> 
   
   <category>
       <pattern>verificação de horario</pattern>
-      <template>seu horario e :
+      <template>
+          Insira seu CPF :</template>
+        <template>
           <button>
-        <text>Retornar</text>
+        <text>Retornar ao menu inicial</text>
         <postback>oi</postback>
     </button>
       </template>
+      
+          <postback>
+                <pattern>verificação de horario</pattern>
+          </postback>  
   </category>
-  
-  
   
   <category>
       <pattern>Resultado</pattern>
-      <template>seu resultado e:
+      <template> Encontre seu resultado no botão abaixo atravez de sua senha:
           <button>
-        <text>Retornar</text>
+              <text>Resultado</text>
+              <url>http://portaldeexames.saude.df.gov.br/lweb/</url>
+          </button>
+          <button>
+        <text>Retornar ao menu inicial</text>
         <postback>oi</postback>
     </button>
       </template>
   </category>
-  
   
   <category>
     <pattern>*</pattern>
     <template>
-    Ola eu sou o Ferb o seu chatbot amigão
-    <image>https://fisiocarepet.com.br/wp-content/uploads/2020/12/dicas-cachorros-ferias.png</image>
+    CPF não encontrado, por favor retorne ao menu inicial apertando o botão asseguir.
+    
     <button>
         <text>Prosseguir</text>
         <postback>ferb</postback>
